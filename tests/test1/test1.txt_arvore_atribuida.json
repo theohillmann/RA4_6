@@ -1,0 +1,1312 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 2,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 3,
+      "context": "( real mem_store )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 3.4
+        },
+        {
+          "kind": "STORE",
+          "value": "C"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 4,
+      "context": "( int res )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 5,
+      "context": "( int res ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "RES"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 6,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 7,
+      "context": "( memid ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "B"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 8,
+      "context": "( int int + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 9,
+      "context": "( memid int + )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 10,
+      "context": "( int memid + )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 11,
+      "context": "( memid memid + )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 12,
+      "context": "( int int - )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 13,
+      "context": "( memid int - )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 14,
+      "context": "( int memid - )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 15,
+      "context": "( memid memid - )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 16,
+      "context": "( int int * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 17,
+      "context": "( memid int * )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 18,
+      "context": "( int memid * )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 19,
+      "context": "( memid memid * )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 20,
+      "context": "( int int / )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 21,
+      "context": "( memid int / )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 22,
+      "context": "( int memid / )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 23,
+      "context": "( memid memid / )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "/"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 24,
+      "context": "( int int | )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 25,
+      "context": "( memid int | )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 26,
+      "context": "( int memid | )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 27,
+      "context": "( memid memid | )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 28,
+      "context": "( int int % )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 29,
+      "context": "( memid int % )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 30,
+      "context": "( int memid % )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 31,
+      "context": "( memid memid % )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "%"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 32,
+      "context": "( int int ^ )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 33,
+      "context": "( memid int ^ )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 34,
+      "context": "( int memid ^ )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 35,
+      "context": "( memid memid ^ )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 36,
+      "context": "( int int >= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 37,
+      "context": "( memid int >= )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 38,
+      "context": "( int memid >= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 39,
+      "context": "( memid memid >= )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 40,
+      "context": "( int int <= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 41,
+      "context": "( memid int <= )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 42,
+      "context": "( int memid <= )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 43,
+      "context": "( memid memid <= )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 44,
+      "context": "( int int > )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 45,
+      "context": "( memid int > )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 46,
+      "context": "( int memid > )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 47,
+      "context": "( memid memid > )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 48,
+      "context": "( int int < )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 49,
+      "context": "( memid int < )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 50,
+      "context": "( int memid < )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 51,
+      "context": "( memid memid < )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 52,
+      "context": "( int int == )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 53,
+      "context": "( memid int == )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 54,
+      "context": "( int memid == )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 55,
+      "context": "( memid memid == )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "=="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 56,
+      "context": "( int int != )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 57,
+      "context": "( memid int != )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 58,
+      "context": "( int memid != )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 59,
+      "context": "( memid memid != )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "!="
+        }
+      ],
+      "type": "bool"
+    },
+    {
+      "line": 60,
+      "context": "( ( int int < ) ( memid ) while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 61,
+      "context": "( ( memid int < ) ( memid ) while )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 62,
+      "context": "( ( int memid < ) ( int ) while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 63,
+      "context": "( ( memid memid < ) ( memid ) while )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "<"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 64,
+      "context": "( ( int int > ) ( int ) ( int ) if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 65,
+      "context": "( ( memid int > ) ( memid ) ( int ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 66,
+      "context": "( ( int memid > ) ( int ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 67,
+      "context": "( ( memid memid > ) ( memid ) ( memid ) if )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": ">"
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "IF"
+        }
+      ],
+      "type": "int"
+    }
+  ],
+  "symbols": {}
+}
