@@ -1,0 +1,190 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 0
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 2,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 3,
+      "context": "( int mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 4,
+      "context": "( ( memid int <= ) ( ( memid memid + ) mem_store ) while )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "A"
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "C"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 5,
+      "context": "( ( int int <= ) ( ( memid mem_store ) mem_store ) while )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "C"
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        },
+        {
+          "kind": "STORE",
+          "value": "B"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 6,
+      "context": "( ( int int <= ) ( ( memid mem_store ) mem_store ) while ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "B"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        },
+        {
+          "kind": "WHILE"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 7,
+      "context": "( ( memid int + ) mem_store )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 8,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    }
+  ],
+  "symbols": {}
+}

@@ -1,0 +1,115 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 8
+        },
+        {
+          "kind": "STORE",
+          "value": "N"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 2,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 3,
+      "context": "( int mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "F"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 4,
+      "context": "( ( memid memid <= ) ( ( memid memid * ) mem_store ) ( ( memid int + ) mem_store ) for )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "REF",
+          "value": "N"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "F"
+        },
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "STORE",
+          "value": "F"
+        },
+        {
+          "kind": "REF",
+          "value": "I"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I"
+        },
+        {
+          "kind": "FOR"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 5,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F"
+        }
+      ],
+      "type": "int"
+    }
+  ],
+  "symbols": {}
+}

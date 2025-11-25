@@ -1,0 +1,550 @@
+{
+  "lines": [
+    {
+      "line": 1,
+      "context": "( real mem_store )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 1.0
+        },
+        {
+          "kind": "STORE",
+          "value": "RESULT"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 2,
+      "context": "( real mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 0.5
+        },
+        {
+          "kind": "STORE",
+          "value": "X"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 3,
+      "context": "( ( real int ^ ) mem_store )",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 0.5
+        },
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        },
+        {
+          "kind": "STORE",
+          "value": "POT1"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 4,
+      "context": "( int mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 2
+        },
+        {
+          "kind": "STORE",
+          "value": "N1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 5,
+      "context": "( int mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 6,
+      "context": "( int mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 7,
+      "context": "( ( memid memid <= ) ( ( memid memid * ) mem_store ) ( ( memid int + ) mem_store ) for )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I1"
+        },
+        {
+          "kind": "REF",
+          "value": "N1"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "I1"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "I1"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I1"
+        },
+        {
+          "kind": "FOR"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 8,
+      "context": "( ( memid memid | ) mem_store )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "POT1"
+        },
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        },
+        {
+          "kind": "STORE",
+          "value": "FRA1"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 9,
+      "context": "( ( memid memid - ) mem_store )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "RESULT"
+        },
+        {
+          "kind": "REF",
+          "value": "FRA1"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        },
+        {
+          "kind": "STORE",
+          "value": "RESULT"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 10,
+      "context": "( ( real int ^ ) mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 0.5
+        },
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        },
+        {
+          "kind": "STORE",
+          "value": "POT2"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 11,
+      "context": "( int mem_store ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 4
+        },
+        {
+          "kind": "STORE",
+          "value": "N2"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 12,
+      "context": "( int mem_store ) #5",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I2"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 13,
+      "context": "( int mem_store ) #6",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "F2"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 14,
+      "context": "( ( memid memid <= ) ( ( memid memid * ) mem_store ) ( ( memid int + ) mem_store ) for ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I2"
+        },
+        {
+          "kind": "REF",
+          "value": "N2"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "F2"
+        },
+        {
+          "kind": "REF",
+          "value": "I2"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "STORE",
+          "value": "F2"
+        },
+        {
+          "kind": "REF",
+          "value": "I2"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I2"
+        },
+        {
+          "kind": "FOR"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 15,
+      "context": "( ( memid memid | ) mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "POT2"
+        },
+        {
+          "kind": "REF",
+          "value": "F2"
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        },
+        {
+          "kind": "STORE",
+          "value": "FRA2"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 16,
+      "context": "( ( memid memid + ) mem_store )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "RESULT"
+        },
+        {
+          "kind": "REF",
+          "value": "FRA2"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "RESULT"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 17,
+      "context": "( ( real int ^ ) mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "REAL",
+          "value": 0.5
+        },
+        {
+          "kind": "INT",
+          "value": 6
+        },
+        {
+          "kind": "OP",
+          "value": "^"
+        },
+        {
+          "kind": "STORE",
+          "value": "POT3"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 18,
+      "context": "( int mem_store ) #7",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 6
+        },
+        {
+          "kind": "STORE",
+          "value": "N3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 19,
+      "context": "( int mem_store ) #8",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "I3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 20,
+      "context": "( int mem_store ) #9",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 21,
+      "context": "( ( memid memid <= ) ( ( memid memid * ) mem_store ) ( ( memid int + ) mem_store ) for ) #3",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "I3"
+        },
+        {
+          "kind": "REF",
+          "value": "N3"
+        },
+        {
+          "kind": "OP",
+          "value": "<="
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "REF",
+          "value": "I3"
+        },
+        {
+          "kind": "OP",
+          "value": "*"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        },
+        {
+          "kind": "REF",
+          "value": "I3"
+        },
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "I3"
+        },
+        {
+          "kind": "FOR"
+        }
+      ],
+      "type": "void"
+    },
+    {
+      "line": 22,
+      "context": "( ( memid memid | ) mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "POT2"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "|"
+        },
+        {
+          "kind": "STORE",
+          "value": "FRA3"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 23,
+      "context": "( ( memid memid - ) mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "RESULT"
+        },
+        {
+          "kind": "REF",
+          "value": "FRA2"
+        },
+        {
+          "kind": "OP",
+          "value": "-"
+        },
+        {
+          "kind": "STORE",
+          "value": "RESULT"
+        }
+      ],
+      "type": "real"
+    },
+    {
+      "line": 24,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "RESULT"
+        }
+      ],
+      "type": "real"
+    }
+  ],
+  "symbols": {}
+}

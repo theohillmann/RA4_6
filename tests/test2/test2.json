@@ -1,0 +1,3803 @@
+{
+  "( real mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "REAL_LIT",
+                                "lexeme": "1.4"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int + ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "+"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int - ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "2"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "-"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #2": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int * ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "*"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #3": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int | ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "13"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "6"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "|"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #4": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int / ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "/"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #5": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int ^ ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "^"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #6": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int % ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "%"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #7": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int res ) mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "8"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "res"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #8": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int > ) ( int mem_store ) ( int mem_store ) if )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "2"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": ">"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #9": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int < ) ( int mem_store ) ( int mem_store ) if )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "2"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "<"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #10": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int >= ) ( int mem_store ) ( int mem_store ) if )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": ">="
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #11": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int <= ) ( int mem_store ) ( int mem_store ) if )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "2"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "2"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "<="
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #12": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int == ) ( int mem_store ) ( int mem_store ) if )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "2"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "=="
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #13": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( int int == ) ( int mem_store ) ( int mem_store ) if ) #2": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "INT_LIT",
+                                            "lexeme": "1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "1"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "=="
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "VALUE",
+                                                "children": [
+                                                  {
+                                                    "label": "INT_LIT",
+                                                    "lexeme": "6"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "IF"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #14": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( int mem_store )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "INT_LIT",
+                                "lexeme": "1"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( memid int < ) ( ( memid int * ) mem_store ) while )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "IDENT",
+                                            "lexeme": "A"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "<"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "SEXP",
+                                            "children": [
+                                              {
+                                                "label": "("
+                                              },
+                                              {
+                                                "label": "FORM",
+                                                "children": [
+                                                  {
+                                                    "label": "STACKTERM",
+                                                    "children": [
+                                                      {
+                                                        "label": "VALUE",
+                                                        "children": [
+                                                          {
+                                                            "label": "IDENT",
+                                                            "lexeme": "A"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": "TAIL1",
+                                                    "children": [
+                                                      {
+                                                        "label": "STACKTERM",
+                                                        "children": [
+                                                          {
+                                                            "label": "VALUE",
+                                                            "children": [
+                                                              {
+                                                                "label": "INT_LIT",
+                                                                "lexeme": "5"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "label": "TAIL2",
+                                                        "children": [
+                                                          {
+                                                            "label": "OP",
+                                                            "children": [
+                                                              {
+                                                                "label": "*"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": ")"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "A"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "WHILE"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #15": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( int mem_store ) #2": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "INT_LIT",
+                                "lexeme": "1"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "A"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( int mem_store ) #3": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "INT_LIT",
+                                "lexeme": "0"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "mem_store",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "B"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( ( memid int < ) ( ( memid int + ) mem_store ) ( ( memid int + ) mem_store ) for )": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "SEXP",
+                            "children": [
+                              {
+                                "label": "("
+                              },
+                              {
+                                "label": "FORM",
+                                "children": [
+                                  {
+                                    "label": "STACKTERM",
+                                    "children": [
+                                      {
+                                        "label": "VALUE",
+                                        "children": [
+                                          {
+                                            "label": "IDENT",
+                                            "lexeme": "A"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "TAIL1",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "VALUE",
+                                            "children": [
+                                              {
+                                                "label": "INT_LIT",
+                                                "lexeme": "5"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL2",
+                                        "children": [
+                                          {
+                                            "label": "OP",
+                                            "children": [
+                                              {
+                                                "label": "<"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": ")"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1",
+                        "children": [
+                          {
+                            "label": "STACKTERM",
+                            "children": [
+                              {
+                                "label": "SEXP",
+                                "children": [
+                                  {
+                                    "label": "("
+                                  },
+                                  {
+                                    "label": "FORM",
+                                    "children": [
+                                      {
+                                        "label": "STACKTERM",
+                                        "children": [
+                                          {
+                                            "label": "SEXP",
+                                            "children": [
+                                              {
+                                                "label": "("
+                                              },
+                                              {
+                                                "label": "FORM",
+                                                "children": [
+                                                  {
+                                                    "label": "STACKTERM",
+                                                    "children": [
+                                                      {
+                                                        "label": "VALUE",
+                                                        "children": [
+                                                          {
+                                                            "label": "IDENT",
+                                                            "lexeme": "B"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": "TAIL1",
+                                                    "children": [
+                                                      {
+                                                        "label": "STACKTERM",
+                                                        "children": [
+                                                          {
+                                                            "label": "VALUE",
+                                                            "children": [
+                                                              {
+                                                                "label": "INT_LIT",
+                                                                "lexeme": "5"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "label": "TAIL2",
+                                                        "children": [
+                                                          {
+                                                            "label": "OP",
+                                                            "children": [
+                                                              {
+                                                                "label": "+"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": ")"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "TAIL1",
+                                        "children": [
+                                          {
+                                            "label": "mem_store",
+                                            "children": [
+                                              {
+                                                "label": "IDENT",
+                                                "lexeme": "B"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": ")"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": "TAIL2",
+                            "children": [
+                              {
+                                "label": "STACKTERM",
+                                "children": [
+                                  {
+                                    "label": "SEXP",
+                                    "children": [
+                                      {
+                                        "label": "("
+                                      },
+                                      {
+                                        "label": "FORM",
+                                        "children": [
+                                          {
+                                            "label": "STACKTERM",
+                                            "children": [
+                                              {
+                                                "label": "SEXP",
+                                                "children": [
+                                                  {
+                                                    "label": "("
+                                                  },
+                                                  {
+                                                    "label": "FORM",
+                                                    "children": [
+                                                      {
+                                                        "label": "STACKTERM",
+                                                        "children": [
+                                                          {
+                                                            "label": "VALUE",
+                                                            "children": [
+                                                              {
+                                                                "label": "IDENT",
+                                                                "lexeme": "A"
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "label": "TAIL1",
+                                                        "children": [
+                                                          {
+                                                            "label": "STACKTERM",
+                                                            "children": [
+                                                              {
+                                                                "label": "VALUE",
+                                                                "children": [
+                                                                  {
+                                                                    "label": "INT_LIT",
+                                                                    "lexeme": "1"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "label": "TAIL2",
+                                                            "children": [
+                                                              {
+                                                                "label": "OP",
+                                                                "children": [
+                                                                  {
+                                                                    "label": "+"
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": ")"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "TAIL1",
+                                            "children": [
+                                              {
+                                                "label": "mem_store",
+                                                "children": [
+                                                  {
+                                                    "label": "IDENT",
+                                                    "lexeme": "A"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": ")"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "CTRL_TAIL",
+                                "children": [
+                                  {
+                                    "label": "for"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  },
+  "( memid ) #16": {
+    "label": "PROGRAM",
+    "children": [
+      {
+        "label": "LINES",
+        "children": [
+          {
+            "label": "LINE",
+            "children": [
+              {
+                "label": "SEXP",
+                "children": [
+                  {
+                    "label": "("
+                  },
+                  {
+                    "label": "FORM",
+                    "children": [
+                      {
+                        "label": "STACKTERM",
+                        "children": [
+                          {
+                            "label": "VALUE",
+                            "children": [
+                              {
+                                "label": "IDENT",
+                                "lexeme": "B"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "TAIL1"
+                      }
+                    ]
+                  },
+                  {
+                    "label": ")"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "LINES"
+          }
+        ]
+      }
+    ]
+  }
+}
