@@ -16,16 +16,16 @@
     "op_symbol": null
   },
   {
-    "op": "assign",
+    "op": "mem_load",
     "dest": "t1",
-    "arg1": "1",
+    "arg1": "A",
     "arg2": null,
     "label": null,
     "op_symbol": null
   },
   {
-    "op": "mem_store",
-    "dest": "B",
+    "op": "print",
+    "dest": null,
     "arg1": "t1",
     "arg2": null,
     "label": null,
@@ -41,295 +41,15 @@
   },
   {
     "op": "mem_store",
-    "dest": "I",
+    "dest": "A",
     "arg1": "t2",
     "arg2": null,
     "label": null,
     "op_symbol": null
   },
   {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L0",
-    "op_symbol": null
-  },
-  {
     "op": "mem_load",
     "dest": "t3",
-    "arg1": "I",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t4",
-    "arg1": "5",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "binop",
-    "dest": "t5",
-    "arg1": "t3",
-    "arg2": "t4",
-    "label": null,
-    "op_symbol": "<="
-  },
-  {
-    "op": "ifFalse",
-    "dest": null,
-    "arg1": "t5",
-    "arg2": null,
-    "label": "L1",
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t6",
-    "arg1": "A",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t7",
-    "arg1": "B",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "binop",
-    "dest": "t8",
-    "arg1": "t6",
-    "arg2": "t7",
-    "label": null,
-    "op_symbol": "+"
-  },
-  {
-    "op": "mem_store",
-    "dest": "C",
-    "arg1": "t8",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "goto",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L0",
-    "op_symbol": null
-  },
-  {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L1",
-    "op_symbol": null
-  },
-  {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L2",
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t9",
-    "arg1": "1",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t10",
-    "arg1": "1",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "binop",
-    "dest": "t11",
-    "arg1": "t9",
-    "arg2": "t10",
-    "label": null,
-    "op_symbol": "<="
-  },
-  {
-    "op": "ifFalse",
-    "dest": null,
-    "arg1": "t11",
-    "arg2": null,
-    "label": "L3",
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t12",
-    "arg1": "C",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_store",
-    "dest": "B",
-    "arg1": "t12",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_store",
-    "dest": "B",
-    "arg1": "t12",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "goto",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L2",
-    "op_symbol": null
-  },
-  {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L3",
-    "op_symbol": null
-  },
-  {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L4",
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t13",
-    "arg1": "1",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t14",
-    "arg1": "1",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "binop",
-    "dest": "t15",
-    "arg1": "t13",
-    "arg2": "t14",
-    "label": null,
-    "op_symbol": "<="
-  },
-  {
-    "op": "ifFalse",
-    "dest": null,
-    "arg1": "t15",
-    "arg2": null,
-    "label": "L5",
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t16",
-    "arg1": "B",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_store",
-    "dest": "A",
-    "arg1": "t16",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_store",
-    "dest": "A",
-    "arg1": "t16",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "goto",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L4",
-    "op_symbol": null
-  },
-  {
-    "op": "label",
-    "dest": null,
-    "arg1": null,
-    "arg2": null,
-    "label": "L5",
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t17",
-    "arg1": "I",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "assign",
-    "dest": "t18",
-    "arg1": "1",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "binop",
-    "dest": "t19",
-    "arg1": "t17",
-    "arg2": "t18",
-    "label": null,
-    "op_symbol": "+"
-  },
-  {
-    "op": "mem_store",
-    "dest": "I",
-    "arg1": "t19",
-    "arg2": null,
-    "label": null,
-    "op_symbol": null
-  },
-  {
-    "op": "mem_load",
-    "dest": "t20",
     "arg1": "A",
     "arg2": null,
     "label": null,
@@ -338,7 +58,1479 @@
   {
     "op": "print",
     "dest": null,
+    "arg1": "t3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t0",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t4",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t5",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t6",
+    "arg1": "t4",
+    "arg2": "t5",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t6",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t7",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t7",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t7",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t8",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t9",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t10",
+    "arg1": "t8",
+    "arg2": "t9",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t10",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t11",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t11",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t11",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t7",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t12",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t13",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t14",
+    "arg1": "t12",
+    "arg2": "t13",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t14",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t15",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t15",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t15",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t11",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t16",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t17",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t18",
+    "arg1": "t16",
+    "arg2": "t17",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t18",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t19",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t19",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t19",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t15",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t20",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t21",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t22",
     "arg1": "t20",
+    "arg2": "t21",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t22",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t23",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t23",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t23",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t19",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t24",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t25",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t26",
+    "arg1": "t24",
+    "arg2": "t25",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t26",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t27",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t27",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t27",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t23",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t28",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t29",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t30",
+    "arg1": "t28",
+    "arg2": "t29",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t30",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t31",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t31",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t31",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t27",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t32",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t33",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t34",
+    "arg1": "t32",
+    "arg2": "t33",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t34",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t35",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t35",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t35",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t31",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t36",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t37",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t38",
+    "arg1": "t36",
+    "arg2": "t37",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t38",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t39",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t39",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t39",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t35",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t40",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t41",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t42",
+    "arg1": "t40",
+    "arg2": "t41",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t42",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t43",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t43",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t43",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t39",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t44",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t45",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t46",
+    "arg1": "t44",
+    "arg2": "t45",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t46",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t47",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t47",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t47",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t43",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t48",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t49",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t50",
+    "arg1": "t48",
+    "arg2": "t49",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t50",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t51",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t51",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t51",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t47",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t52",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t53",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t54",
+    "arg1": "t52",
+    "arg2": "t53",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t54",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t55",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t55",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t55",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t51",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t56",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t57",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t58",
+    "arg1": "t56",
+    "arg2": "t57",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t58",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t59",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t59",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t59",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t55",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t60",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t61",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t62",
+    "arg1": "t60",
+    "arg2": "t61",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t62",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t63",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t63",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t63",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t59",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t64",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t65",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t66",
+    "arg1": "t64",
+    "arg2": "t65",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t66",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t67",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t67",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t67",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t63",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t68",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t69",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t70",
+    "arg1": "t68",
+    "arg2": "t69",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t70",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t71",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t71",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t71",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t67",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t72",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t73",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t74",
+    "arg1": "t72",
+    "arg2": "t73",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t74",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t75",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t75",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t75",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t71",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t76",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t77",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t78",
+    "arg1": "t76",
+    "arg2": "t77",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t78",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t79",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t79",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t79",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t75",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t80",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t81",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t82",
+    "arg1": "t80",
+    "arg2": "t81",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t82",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t83",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t83",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t83",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t79",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t84",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t85",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t86",
+    "arg1": "t84",
+    "arg2": "t85",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t86",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t87",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t87",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t87",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t83",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t88",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t89",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t90",
+    "arg1": "t88",
+    "arg2": "t89",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t90",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t91",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t91",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F1",
+    "arg1": "t91",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_store",
+    "dest": "F3",
+    "arg1": "t87",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t92",
+    "arg1": "F1",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t93",
+    "arg1": "F3",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "binop",
+    "dest": "t94",
+    "arg1": "t92",
+    "arg2": "t93",
+    "label": null,
+    "op_symbol": "+"
+  },
+  {
+    "op": "mem_store",
+    "dest": "A",
+    "arg1": "t94",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "mem_load",
+    "dest": "t95",
+    "arg1": "A",
+    "arg2": null,
+    "label": null,
+    "op_symbol": null
+  },
+  {
+    "op": "print",
+    "dest": null,
+    "arg1": "t95",
     "arg2": null,
     "label": null,
     "op_symbol": null

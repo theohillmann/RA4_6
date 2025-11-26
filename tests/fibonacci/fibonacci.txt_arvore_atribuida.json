@@ -17,6 +17,17 @@
     },
     {
       "line": 2,
+      "context": "( memid )",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 3,
       "context": "( int mem_store ) #2",
       "postfix": [
         {
@@ -25,143 +36,69 @@
         },
         {
           "kind": "STORE",
-          "value": "B"
-        }
-      ],
-      "type": "int"
-    },
-    {
-      "line": 3,
-      "context": "( int mem_store ) #3",
-      "postfix": [
-        {
-          "kind": "INT",
-          "value": 1
-        },
-        {
-          "kind": "STORE",
-          "value": "I"
+          "value": "A"
         }
       ],
       "type": "int"
     },
     {
       "line": 4,
-      "context": "( ( memid int <= ) ( ( memid memid + ) mem_store ) while )",
+      "context": "( memid ) #2",
       "postfix": [
         {
           "kind": "REF",
-          "value": "I"
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 5,
+      "context": "( ( int res ) mem_store )",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
         },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 6,
+      "context": "( ( int res ) mem_store ) #2",
+      "postfix": [
         {
           "kind": "INT",
           "value": 5
         },
         {
-          "kind": "OP",
-          "value": "<="
-        },
-        {
-          "kind": "REF",
-          "value": "A"
-        },
-        {
-          "kind": "REF",
-          "value": "B"
-        },
-        {
-          "kind": "OP",
-          "value": "+"
+          "kind": "RES"
         },
         {
           "kind": "STORE",
-          "value": "C"
-        },
-        {
-          "kind": "WHILE"
+          "value": "F3"
         }
       ],
-      "type": "void"
-    },
-    {
-      "line": 5,
-      "context": "( ( int int <= ) ( ( memid mem_store ) mem_store ) while )",
-      "postfix": [
-        {
-          "kind": "INT",
-          "value": 1
-        },
-        {
-          "kind": "INT",
-          "value": 1
-        },
-        {
-          "kind": "OP",
-          "value": "<="
-        },
-        {
-          "kind": "REF",
-          "value": "C"
-        },
-        {
-          "kind": "STORE",
-          "value": "B"
-        },
-        {
-          "kind": "STORE",
-          "value": "B"
-        },
-        {
-          "kind": "WHILE"
-        }
-      ],
-      "type": "void"
-    },
-    {
-      "line": 6,
-      "context": "( ( int int <= ) ( ( memid mem_store ) mem_store ) while ) #2",
-      "postfix": [
-        {
-          "kind": "INT",
-          "value": 1
-        },
-        {
-          "kind": "INT",
-          "value": 1
-        },
-        {
-          "kind": "OP",
-          "value": "<="
-        },
-        {
-          "kind": "REF",
-          "value": "B"
-        },
-        {
-          "kind": "STORE",
-          "value": "A"
-        },
-        {
-          "kind": "STORE",
-          "value": "A"
-        },
-        {
-          "kind": "WHILE"
-        }
-      ],
-      "type": "void"
+      "type": "int"
     },
     {
       "line": 7,
-      "context": "( ( memid int + ) mem_store )",
+      "context": "( ( memid memid + ) mem_store )",
       "postfix": [
         {
           "kind": "REF",
-          "value": "I"
+          "value": "F1"
         },
         {
-          "kind": "INT",
-          "value": 1
+          "kind": "REF",
+          "value": "F3"
         },
         {
           "kind": "OP",
@@ -169,14 +106,1554 @@
         },
         {
           "kind": "STORE",
-          "value": "I"
+          "value": "A"
         }
       ],
       "type": "int"
     },
     {
       "line": 8,
-      "context": "( memid )",
+      "context": "( memid ) #3",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 9,
+      "context": "( ( int res ) mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 10,
+      "context": "( ( int res ) mem_store ) #4",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 11,
+      "context": "( ( memid memid + ) mem_store ) #2",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 12,
+      "context": "( memid ) #4",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 13,
+      "context": "( ( int res ) mem_store ) #5",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 14,
+      "context": "( ( int res ) mem_store ) #6",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 15,
+      "context": "( ( memid memid + ) mem_store ) #3",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 16,
+      "context": "( memid ) #5",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 17,
+      "context": "( ( int res ) mem_store ) #7",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 18,
+      "context": "( ( int res ) mem_store ) #8",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 19,
+      "context": "( ( memid memid + ) mem_store ) #4",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 20,
+      "context": "( memid ) #6",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 21,
+      "context": "( ( int res ) mem_store ) #9",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 22,
+      "context": "( ( int res ) mem_store ) #10",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 23,
+      "context": "( ( memid memid + ) mem_store ) #5",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 24,
+      "context": "( memid ) #7",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 25,
+      "context": "( ( int res ) mem_store ) #11",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 26,
+      "context": "( ( int res ) mem_store ) #12",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 27,
+      "context": "( ( memid memid + ) mem_store ) #6",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 28,
+      "context": "( memid ) #8",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 29,
+      "context": "( ( int res ) mem_store ) #13",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 30,
+      "context": "( ( int res ) mem_store ) #14",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 31,
+      "context": "( ( memid memid + ) mem_store ) #7",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 32,
+      "context": "( memid ) #9",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 33,
+      "context": "( ( int res ) mem_store ) #15",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 34,
+      "context": "( ( int res ) mem_store ) #16",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 35,
+      "context": "( ( memid memid + ) mem_store ) #8",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 36,
+      "context": "( memid ) #10",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 37,
+      "context": "( ( int res ) mem_store ) #17",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 38,
+      "context": "( ( int res ) mem_store ) #18",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 39,
+      "context": "( ( memid memid + ) mem_store ) #9",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 40,
+      "context": "( memid ) #11",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 41,
+      "context": "( ( int res ) mem_store ) #19",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 42,
+      "context": "( ( int res ) mem_store ) #20",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 43,
+      "context": "( ( memid memid + ) mem_store ) #10",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 44,
+      "context": "( memid ) #12",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 45,
+      "context": "( ( int res ) mem_store ) #21",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 46,
+      "context": "( ( int res ) mem_store ) #22",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 47,
+      "context": "( ( memid memid + ) mem_store ) #11",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 48,
+      "context": "( memid ) #13",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 49,
+      "context": "( ( int res ) mem_store ) #23",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 50,
+      "context": "( ( int res ) mem_store ) #24",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 51,
+      "context": "( ( memid memid + ) mem_store ) #12",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 52,
+      "context": "( memid ) #14",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 53,
+      "context": "( ( int res ) mem_store ) #25",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 54,
+      "context": "( ( int res ) mem_store ) #26",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 55,
+      "context": "( ( memid memid + ) mem_store ) #13",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 56,
+      "context": "( memid ) #15",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 57,
+      "context": "( ( int res ) mem_store ) #27",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 58,
+      "context": "( ( int res ) mem_store ) #28",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 59,
+      "context": "( ( memid memid + ) mem_store ) #14",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 60,
+      "context": "( memid ) #16",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 61,
+      "context": "( ( int res ) mem_store ) #29",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 62,
+      "context": "( ( int res ) mem_store ) #30",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 63,
+      "context": "( ( memid memid + ) mem_store ) #15",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 64,
+      "context": "( memid ) #17",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 65,
+      "context": "( ( int res ) mem_store ) #31",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 66,
+      "context": "( ( int res ) mem_store ) #32",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 67,
+      "context": "( ( memid memid + ) mem_store ) #16",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 68,
+      "context": "( memid ) #18",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 69,
+      "context": "( ( int res ) mem_store ) #33",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 70,
+      "context": "( ( int res ) mem_store ) #34",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 71,
+      "context": "( ( memid memid + ) mem_store ) #17",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 72,
+      "context": "( memid ) #19",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 73,
+      "context": "( ( int res ) mem_store ) #35",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 74,
+      "context": "( ( int res ) mem_store ) #36",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 75,
+      "context": "( ( memid memid + ) mem_store ) #18",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 76,
+      "context": "( memid ) #20",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 77,
+      "context": "( ( int res ) mem_store ) #37",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 78,
+      "context": "( ( int res ) mem_store ) #38",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 79,
+      "context": "( ( memid memid + ) mem_store ) #19",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 80,
+      "context": "( memid ) #21",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 81,
+      "context": "( ( int res ) mem_store ) #39",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 82,
+      "context": "( ( int res ) mem_store ) #40",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 83,
+      "context": "( ( memid memid + ) mem_store ) #20",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 84,
+      "context": "( memid ) #22",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 85,
+      "context": "( ( int res ) mem_store ) #41",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 86,
+      "context": "( ( int res ) mem_store ) #42",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 87,
+      "context": "( ( memid memid + ) mem_store ) #21",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 88,
+      "context": "( memid ) #23",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 89,
+      "context": "( ( int res ) mem_store ) #43",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 90,
+      "context": "( ( int res ) mem_store ) #44",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 91,
+      "context": "( ( memid memid + ) mem_store ) #22",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 92,
+      "context": "( memid ) #24",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 93,
+      "context": "( ( int res ) mem_store ) #45",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 1
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F1"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 94,
+      "context": "( ( int res ) mem_store ) #46",
+      "postfix": [
+        {
+          "kind": "INT",
+          "value": 5
+        },
+        {
+          "kind": "RES"
+        },
+        {
+          "kind": "STORE",
+          "value": "F3"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 95,
+      "context": "( ( memid memid + ) mem_store ) #23",
+      "postfix": [
+        {
+          "kind": "REF",
+          "value": "F1"
+        },
+        {
+          "kind": "REF",
+          "value": "F3"
+        },
+        {
+          "kind": "OP",
+          "value": "+"
+        },
+        {
+          "kind": "STORE",
+          "value": "A"
+        }
+      ],
+      "type": "int"
+    },
+    {
+      "line": 96,
+      "context": "( memid ) #25",
       "postfix": [
         {
           "kind": "REF",

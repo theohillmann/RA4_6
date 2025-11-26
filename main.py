@@ -1,4 +1,5 @@
 import json
+import argparse
 from semantic_analyzer.main import semantic_analysis
 from lexical_analyzer.lexical_analyzer import lexical_analysis
 from syntactic_analyzer.main import main as syntactic_analysis
@@ -7,47 +8,45 @@ from intermediate_code.tac_generator.format_tac import format_tac
 from intermediate_code.tac_optimization.tac_optmization import TACOptimizer
 from generate_assembly.generate_assembly import TACToAVRAssembly
 
-# SAMPLE_FILE = "tests/test1/test1.txt"
-# SAMPLE_FILE = "tests/test2/test2.txt"
 
-# SAMPLE_FILE = "tests/factorial/factorial.txt"
-# SAMPLE_FILE = "tests/fibonacci/fibonacci.txt"
-SAMPLE_FILE = "tests/taylor/taylor.txt"
+DEFAULT_SAMPLE_FILE = "tests/fibonacci/fibonacci.txt"
 
 
-def main():
+def main(sample_file):
+    sample_file = sample_file or DEFAULT_SAMPLE_FILE
+
     ### Lexical Analysis ###
-    tokens = lexical_analysis(SAMPLE_FILE)
+    tokens = lexical_analysis(sample_file)
     for index, token in enumerate(tokens):
         if "Error" in token:
-            print(f"File {SAMPLE_FILE}, expression {index}")
+            print(f"File {sample_file}, expression {index}")
             print(f"    {token}")
             print()
             return
 
     ### Syntactic Analysis ###
-    with open(SAMPLE_FILE, "r") as file:
+    with open(sample_file, "r") as file:
         source_lines = [ln.strip() for ln in file if ln.strip()]
 
     syntactic_error_count = syntactic_analysis(
-        SAMPLE_FILE, debug=False, source_lines=source_lines
+        sample_file, debug=False, source_lines=source_lines
     )
     if syntactic_error_count > 0:
         return
 
     ### Semantic Analysis ###
-    semantic_ok = semantic_analysis(SAMPLE_FILE)
+    semantic_ok = semantic_analysis(sample_file)
     if not semantic_ok:
         return
 
     ### intermediate code ###
-    with open(f"{SAMPLE_FILE}_arvore_atribuida.json", "r") as file:
+    with open(f"{sample_file}_arvore_atribuida.json", "r") as file:
         attributed_tree = json.load(file)
 
     tac_generator = TACGenerator()
     tac_instructions = tac_generator.gerar_tac(attributed_tree)
 
-    with open(f"{SAMPLE_FILE}_tac.json", "w") as file:
+    with open(f"{sample_file}_tac.json", "w") as file:
         json.dump(tac_instructions, file, indent=2)
 
     print("=== TAC ORIGINAL ===")
@@ -56,7 +55,7 @@ def main():
 
     opt = TACOptimizer()
     tac_optimized = opt.optimize(tac_instructions)
-    with open(f"{SAMPLE_FILE}_tac_optimized.json", "w") as file:
+    with open(f"{sample_file}_tac_optimized.json", "w") as file:
         json.dump(tac_optimized, file, indent=2)
 
     print("\n=== TAC OTIMIZADO ===")
@@ -69,4 +68,15 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description="Run analyzer pipeline on a sample file."
+    )
+    parser.add_argument(
+        "-f",
+        "--file",
+        dest="sample_file",
+        default=None,
+        help=f"Path to file (default: {DEFAULT_SAMPLE_FILE})",
+    )
+    args = parser.parse_args()
+    main(args.sample_file)
