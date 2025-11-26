@@ -4,7 +4,7 @@ from semantic_analyzer.main import semantic_analysis
 from lexical_analyzer.lexical_analyzer import lexical_analysis
 from syntactic_analyzer.main import main as syntactic_analysis
 from intermediate_code.tac_generator.tac_generator import TACGenerator
-from intermediate_code.tac_generator.format_tac import format_tac
+from intermediate_code.tac_generator.format_tac import format_tac, tac_to_markdown
 from intermediate_code.tac_optimization.tac_optmization import TACOptimizer
 from generate_assembly.generate_assembly import TACToAVRAssembly
 
@@ -61,6 +61,9 @@ def main(sample_file):
     print("\n=== TAC OTIMIZADO ===")
     for instr in tac_optimized:
         print(format_tac(instr))
+
+    tac_to_markdown(tac_instructions, f"{sample_file}_tac.md")
+    tac_to_markdown(tac_optimized, f"{sample_file}_tac_optimized.md")
 
     asm_code = TACToAVRAssembly().convert(tac_optimized)
     with open("output.s", "w") as f:
